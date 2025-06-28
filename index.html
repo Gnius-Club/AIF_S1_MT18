@@ -1,24 +1,298 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 18: ¡La Primera Impresión Supervisada!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 18: ¡La Primera Impresión Supervisada!</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes inicien y supervisen la impresión 3D de su primer objeto físico.</li>
+                                        <li>Que simulen la colaboración con una IA de monitoreo para detectar fallos en tiempo real.</li>
+                                        <li>Que obtengan y analicen un prototipo físico, completando el ciclo de diseño.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>El prototipo físico del objeto diseñado por el estudiante, impreso en 3D.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Impresoras 3D calibradas y en funcionamiento.</li>
+                                        <li>Filamento PLA.</li>
+                                        <li>Archivos G-code de los estudiantes, listos para imprimir.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Herramientas para retirar piezas y soportes (espátula, alicates pequeños).</li>
+                                        <li>Gafas de seguridad.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (CRÍTICA):</strong>
+                                            <ul>
+                                                <li>Haber iniciado las impresiones 3D de los estudiantes justo antes de que comience la clase para que estén en una etapa visible pero temprana.</li>
+                                                <li>Verificar que todas las impresoras funcionan correctamente.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Repasar el procedimiento de seguridad para retirar piezas de la cama de impresión y quitar soportes.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener una pieza ya impresa (quizás una con soportes) para demostrar el proceso de post-procesado.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como el momento culminante donde los diseños digitales se materializan.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la sesión como el momento de la verdad: cuando los bits se convierten en átomos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos. Ha llegado el momento de la verdad. El momento en que los bits se convierten en átomos. Hoy, sus diseños abandonarán el mundo digital para nacer en el físico. La impresión ha comenzado. Su rol hoy es doble: son los operadores de la máquina, supervisando el proceso, y son los socios del guardián IA, aprendiendo a interpretar las señales de una impresión saludable.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión: 'Hola Xolo, listo para la Misión 18', seguido de su nombre, perfil y gustos. Esperen su confirmación para comenzar a supervisar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Presentar el taller de producción y el desafío de la supervisión activa en colaboración con la IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Taller de Producción y la Supervisión Activa ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador enmarca la clase como un taller de producción y explica la dinámica de supervisión dual (humana + IA).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bienvenidos al taller de producción. Como pueden ver, sus diseños ya están cobrando vida. Nuestra misión hoy es la supervisión, especialmente de las cruciales primeras capas. Mientras las máquinas trabajan, nosotros también. Observaremos el proceso y, en paralelo, Xolo simulará las alertas que un sistema de monitoreo por IA generaría. Compararemos nuestra observación humana con la 'observación' de la máquina para obtener el primer prototipo exitoso.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es la culminación de todo su trabajo. Al final, podrán decir: <strong>'Yo he supervisado el ciclo completo de una impresión 3D, he obtenido mi primer prototipo físico y entiendo cómo mi supervisión humana y la de una IA se complementan para asegurar el éxito del proceso.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Simulación de Monitoreo en Tiempo Real) ⏰ 10 minutos</h2>
+                <p>Fase de simulación interactiva donde los estudiantes actúan como los "ojos" de la IA y reciben reportes y alertas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Reporte de Estado y Diagnóstico IA ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador inicia la simulación de monitoreo con Xolo, pidiendo un reporte de una impresión saludable.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entremos al A.I. GYM. El sistema de monitoreo de Xolo está activo. Él no puede ver, ustedes son sus 'ojos'. **(A un estudiante cerca de la Impresora #1)**: "Reporte de estado requerido. Por favor, describa la primera capa." **(Estudiante responde)** "La primera capa parece completa. Las líneas se ven unidas y está bien pegada a la cama." **(Facilitador, como Xolo)** "Descripción recibida. Correlacionando con datos... **Estado: Saludable.** Probabilidad de éxito: 95%."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Alerta por Warping y Colaboración Humano-IA ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador simula una alerta basada en la descripción de un estudiante y discute la colaboración.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">**(A un estudiante cerca de la Impresora #3)**: "Reporte de estado requerido. ¿Observa alguna deformidad en las esquinas?" **(Estudiante responde)** "Sí, parece que una esquina se está levantando." **(Facilitador, como Xolo)** "Descripción recibida: 'levantamiento en esquina'. Analizando... **¡Alerta! Fallo Potencial Detectado (Warping).** Acción Humana Recomendada: Verifique corrientes de aire. Si progresa, pause la impresión." **(Al grupo)** "Observen la dinámica. La IA da una alerta temprana. Su rol como humanos es usar su juicio. La IA da los datos; ustedes toman la decisión."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Supervisión, Post-Procesado y Reflexión) ⏰ 22 minutos</h2>
+                <p>Fase práctica de supervisión activa, retirada segura de la pieza y análisis táctil del prototipo físico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Supervisión Activa y Retirada del Prototipo ⏰ 12 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes rotan para supervisar las impresoras y luego observan la retirada segura de las piezas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Roten en grupos pequeños para observar de cerca las impresoras. Fíjense en la calidad de las capas, la adhesión a la cama y escuchen sonidos inusuales. (Una vez una pieza esté lista) Ahora observen con atención. Voy a mostrarles cómo retirar la pieza de la cama de forma segura y cómo quitar los soportes con estas herramientas. (El profesor demuestra y entrega las piezas).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Análisis del Objeto Físico ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Los estudiantes reciben y analizan sus prototipos físicos, comparando la realidad con el diseño digital.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Ahora tienen en sus manos la materialización de su idea. Tómense un momento para examinar su prototipo. ¿La calidad de la superficie es la que esperaban? ¿Las dimensiones son correctas? ¿Se imprimieron bien los detalles? ¿Ven algún defecto como warping o hilos de plástico (stringing)? Este es el momento de aprender del mundo real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final de "Show & Tell de Prototipos", donde los estudiantes muestran con orgullo sus creaciones físicas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador guía una reflexión sobre el proceso y el resultado.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Sostengan su prototipo. Prepárense para compartir un éxito y un desafío o defecto que observaron. Piensen: <strong>¿Qué se siente tener en sus manos algo que ustedes diseñaron desde cero?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Show & Tell de Prototipos) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes muestran sus prototipos físicos en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, es el "Show & Tell". Muestren con orgullo sus prototipos. Compartan su mayor éxito ("¡Mi bisagra funciona!") y un desafío o defecto que notaron ("La parte inferior quedó rugosa por los soportes").
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador consolida la sesión, celebrando el cierre del ciclo de la idea a la materia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Felicidades, ingenieros y creadores. Hoy han cerrado el ciclo más importante de la innovación: el ciclo de la idea a la materia. Han demostrado no solo ser capaces de diseñar en el mundo digital, sino de supervisar la compleja transición al mundo físico. Este objeto que sostienen no es solo un trozo de plástico. Es la evidencia de su creatividad, perseverancia y competencia técnica. Es su primer paso como verdaderos arquitectos del futuro tangible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
